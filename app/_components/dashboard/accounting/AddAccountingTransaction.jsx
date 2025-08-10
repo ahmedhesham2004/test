@@ -156,7 +156,7 @@ export default function AddAccountingTransaction() {
                 placeholder="مثال: كشف جديد، شراء أدوات..."
                 value={formData.name ?? ""}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
+                className="w-full text-black border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
                 required
               />
             </div>
@@ -170,7 +170,7 @@ export default function AddAccountingTransaction() {
                 value={formData.description ?? ""}
                 onChange={handleChange}
                 rows={3}
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
+                className="w-full text-black border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
               ></textarea>
             </div>
 
@@ -186,7 +186,7 @@ export default function AddAccountingTransaction() {
                     placeholder="0.00"
                     value={formData.amount}
                     onChange={handleChange}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-[10px] pl-10 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
+                    className="w-full text-black border border-gray-300 rounded-lg px-4 py-[10px] pl-10 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
                     required
                   />
                 </div>
@@ -199,12 +199,12 @@ export default function AddAccountingTransaction() {
                   name="type"
                   value={formData.type}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
+                  className="w-full text-black border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
                   required
                 >
                  
-                  <option value="0">إيراد</option>
-                  <option value="1">مصروف</option>
+                  <option className="text-black" value="0">إيراد</option>
+                  <option className="text-black" value="1">مصروف</option>
                 </select>
               </div>
             </div>
@@ -216,11 +216,11 @@ export default function AddAccountingTransaction() {
                 name="specialtieId"
                 value={formData.specialtieId ?? ""}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
+                className="w-full text-black border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
               >
                 <option value="">اختر التخصص</option>
                 {specialties.map((s) => (
-                  <option key={s.id} value={s.id}>
+                  <option className="text-black" key={s.id} value={s.id}>
                     {s.name}
                   </option>
                 ))}
@@ -235,11 +235,11 @@ export default function AddAccountingTransaction() {
                   name="doctorId"
                   value={formData.doctorId ?? ""}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
+                  className="w-full text-black border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
                 >
-                  <option value="">اختر الطبيب</option>
+                  <option className="text-black" value="">اختر الطبيب</option>
                   {doctors.map((doc) => (
-                    <option key={doc.id} value={doc.id}>
+                    <option className="text-black" key={doc.id} value={doc.id}>
                       {doc.firstName} {doc.lastName}
                     </option>
                   ))}

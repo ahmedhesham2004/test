@@ -176,7 +176,7 @@ export default function AddSpecialtyForm() {
                 type="text"
                 {...register("name", { required: true })}
                 placeholder="أدخل اسم التخصص"
-                className="w-full px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
+                className="w-full text-black px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
               />
             </div>
             
@@ -186,7 +186,7 @@ export default function AddSpecialtyForm() {
                 type="text"
                 {...register("description", { required: true })}
                 placeholder="أدخل وصف التخصص"
-                className="w-full px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
+                className="w-full text-black px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
               />
             </div>
             
@@ -196,7 +196,7 @@ export default function AddSpecialtyForm() {
                 type="number"
                 {...register("price", { required: true })}
                 placeholder="أدخل السعر"
-                className="w-full px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
+                className="w-full text-black px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
               />
             </div>
             
@@ -206,7 +206,7 @@ export default function AddSpecialtyForm() {
                 type="number"
                 {...register("duration", { required: true })}
                 placeholder="أدخل المدة"
-                className="w-full px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
+                className="w-full text-black px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
               />
             </div>
             
@@ -216,7 +216,7 @@ export default function AddSpecialtyForm() {
                 type="file"
                 {...register("image")}
                 accept="image/*"
-                className="w-full px-4 py-2 border border-sky-200 rounded-lg file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-sky-50 file:text-sky-700 hover:file:bg-sky-100 transition"
+                className="w-full text-black px-4 py-2 border border-sky-200 rounded-lg file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-sky-50 file:text-sky-700 hover:file:bg-sky-100 transition"
               />
             </div>
             
@@ -244,7 +244,7 @@ export default function AddSpecialtyForm() {
               <input
                 type="text"
                 placeholder="ابحث عن تخصص..."
-                className="block w-full pl-10 pr-3 py-2 border border-transparent rounded-lg bg-sky-400 bg-opacity-20 text-white placeholder-sky-200 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition"
+                className="block text-black w-full pl-10 pr-3 py-2 border border-transparent rounded-lg bg-sky-400 bg-opacity-20 text-white placeholder-sky-200 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
@@ -367,7 +367,7 @@ export default function AddSpecialtyForm() {
                   type="text"
                   {...register("name", { required: true })}
                   placeholder="اسم التخصص"
-                  className="w-full px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
+                  className="w-full text-black px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
                 />
               </div>
               
@@ -377,7 +377,7 @@ export default function AddSpecialtyForm() {
                   type="text"
                   {...register("description", { required: true })}
                   placeholder="وصف التخصص"
-                  className="w-full px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
+                  className="w-full text-black px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
                 />
               </div>
               
@@ -387,7 +387,7 @@ export default function AddSpecialtyForm() {
                   type="number"
                   {...register("price", { required: true })}
                   placeholder="السعر"
-                  className="w-full px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
+                  className="w-full text-black px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
                 />
               </div>
               
@@ -397,7 +397,7 @@ export default function AddSpecialtyForm() {
                   type="number"
                   {...register("duration", { required: true })}
                   placeholder="المدة"
-                  className="w-full px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
+                  className="w-full text-black px-4 py-2 border border-sky-200 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition"
                 />
               </div>
               
@@ -407,7 +407,7 @@ export default function AddSpecialtyForm() {
                   type="file"
                   {...register("image")}
                   accept="image/*"
-                  className="w-full px-4 py-2 border border-sky-200 rounded-lg file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-sky-50 file:text-sky-700 hover:file:bg-sky-100 transition"
+                  className="w-full text-black px-4 py-2 border border-sky-200 rounded-lg file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-sky-50 file:text-sky-700 hover:file:bg-sky-100 transition"
                 />
               </div>
               

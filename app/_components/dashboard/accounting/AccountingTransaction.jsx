@@ -135,11 +135,11 @@ export default function AccountingTransaction() {
               <select
                 value={typeFilter}
                 onChange={(e) => setTypeFilter(e.target.value)}
-                className="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
+                className="border text-black border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
               >
-                <option value="">عرض الكل</option>
-                <option value="0">إيراد</option>
-                <option value="1">مصروف</option>
+                <option className="text-black" value="">عرض الكل</option>
+                <option className="text-black" value="0">إيراد</option>
+                <option className="text-black" value="1">مصروف</option>
               </select>
             </div>
             

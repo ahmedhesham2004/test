@@ -303,7 +303,7 @@ export default function GetBySpecialtie() {
                             name="doctorId"
                             value={formData.doctorId}
                             onChange={handleChange}
-                            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white text-right"
+                            className="w-full text-black border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white text-right"
                             required
                           >
                             <option value="">اختر التخصص</option>
@@ -326,7 +326,7 @@ export default function GetBySpecialtie() {
                               name="startDate"
                               value={formData.startDate}
                               onChange={handleChange}
-                              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
+                              className="w-full text-black border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
                               required
                             />
                           </div>
@@ -339,7 +339,7 @@ export default function GetBySpecialtie() {
                               name="endDate"
                               value={formData.endDate}
                               onChange={handleChange}
-                              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
+                              className="w-full text-black border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
                               required
                             />
                           </div>

@@ -570,7 +570,7 @@ export default function Doctor() {
   };
 
   return (
-    <div className="min-h-screen p-6">
+    <div className="min-h-screen p-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-blue-100">
           <div className="flex items-center gap-4 mb-6">
@@ -961,8 +961,8 @@ export default function Doctor() {
       </div>
 
       {isPrescriptionModalOpen && (
-        <div className="fixed inset-0 z-40 bg-black bg-opacity-40 flex items-center justify-center">
-          <div className="bg-white rounded-xl p-6 max-w-3xl w-full relative max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 z-40 bg-black bg-opacity-40 flex items-center justify-center"> 
+          <div className="bg-white rounded-xl p-6 max-w-3xl w-full relative top-1/8 max-h-[70vh] overflow-y-auto">
             <button
               onClick={() => setIsPrescriptionModalOpen(false)}
               className="absolute top-2 left-2 text-gray-500 hover:text-red-500"
@@ -980,7 +980,7 @@ export default function Doctor() {
                 </label>
                 <input
                   type="text"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm"
+                  className="mt-1 text-black block w-full rounded-md border-gray-300 shadow-sm"
                   value={diagnosis}
                   onChange={(e) => setDiagnosis(e.target.value)}
                 />
@@ -991,7 +991,7 @@ export default function Doctor() {
                   ملاحظات
                 </label>
                 <textarea
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm"
+                  className="mt-1 text-black block w-full rounded-md border-gray-300 shadow-sm"
                   rows={3}
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}
@@ -1008,7 +1008,7 @@ export default function Doctor() {
                     className="grid grid-cols-12 gap-2 items-center"
                   >
                     <select
-                      className="col-span-3 border rounded-md px-2 py-1"
+                      className="col-span-3 text-black border rounded-md px-2 py-1"
                       value={item.type}
                       onChange={(e) =>
                         handleItemChange(index, "type", e.target.value)
@@ -1020,7 +1020,7 @@ export default function Doctor() {
                       <option value="الأشعة">الأشعة</option>
                     </select>
                     <input
-                      className="col-span-3 border rounded-md px-2 py-1"
+                      className="col-span-3 text-black border rounded-md px-2 py-1"
                       placeholder="اسم العنصر"
                       value={item.name}
                       onChange={(e) =>
@@ -1028,7 +1028,7 @@ export default function Doctor() {
                       }
                     />
                     <input
-                      className="col-span-5 border rounded-md px-2 py-1"
+                      className="col-span-5 text-black border rounded-md px-2 py-1"
                       placeholder="الجرعة أو التفاصيل"
                       value={item.dosageOrDetails}
                       onChange={(e) =>

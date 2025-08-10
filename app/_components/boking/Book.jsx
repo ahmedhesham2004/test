@@ -218,7 +218,7 @@ const Book = () => {
                       setAppointmentDate("");
                       setBookingStatus("");
                     }}
-                    className="w-full p-5 border-2 border-gray-200 rounded-2xl text-right focus:ring-4 focus:ring-blue-100 focus:border-blue-400 transition-all duration-300 bg-white/80 backdrop-blur-sm shadow-inner text-lg appearance-none"
+                    className="w-full text-black p-5 border-2 border-gray-200 rounded-2xl text-right focus:ring-4 focus:ring-blue-100 focus:border-blue-400 transition-all duration-300 bg-white/80 backdrop-blur-sm shadow-inner text-lg appearance-none"
                   >
                     <option value="">اختر يومًا</option>
                     {uniqueDays.map((day, index) => (
@@ -250,7 +250,7 @@ const Book = () => {
                   <select
                     value={appointmentDate}
                     onChange={(e) => setAppointmentDate(e.target.value)}
-                    className={`w-full p-5 border-2 rounded-2xl text-right focus:ring-4 focus:ring-blue-100 transition-all duration-300 backdrop-blur-sm shadow-inner text-lg appearance-none ${
+                    className={`w-full text-black p-5 border-2 rounded-2xl text-right focus:ring-4 focus:ring-blue-100 transition-all duration-300 backdrop-blur-sm shadow-inner text-lg appearance-none ${
                       !selectedDay 
                         ? "border-gray-200 bg-gray-100/80 text-gray-500" 
                         : "border-gray-200 bg-white/80 focus:border-blue-400"

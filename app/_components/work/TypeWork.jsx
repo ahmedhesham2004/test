@@ -64,7 +64,7 @@ export default function SpecialtiesWithSidebar() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10 flex flex-col lg:flex-row gap-8">
+    <div className="max-w-7xl mx-auto px-4 py-10 flex flex-col lg:flex-row gap-8 bg-white">
       {/* Sidebar */}
       <div className="w-full hidden md:block lg:w-64 shrink-0 space-y-3 sticky top-40 self-start h-fit border-l border-gray-200 pr-4 text-right">
         <h3 className="text-xl font-bold text-[#009688] mb-2">جميع التخصصات</h3>

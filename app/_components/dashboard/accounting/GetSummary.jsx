@@ -333,7 +333,7 @@ export default function GetSummary() {
                         value={formData.startDate}
                         onChange={handleChange}
                         required
-                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
+                        className="w-full text-black border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
                       />
                     </div>
 
@@ -347,7 +347,7 @@ export default function GetSummary() {
                         value={formData.endDate}
                         onChange={handleChange}
                         required
-                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
+                        className="w-full text-black border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
                       />
                     </div>
                   </div>

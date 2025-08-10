@@ -52,7 +52,7 @@ export default function Page() {
   }, {});
 
   return (
-    <div className="p-6 max-w-7xl mx-auto">
+    <div className="p-6 w-full bg-white mx-auto">
       <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">السجل الطبي</h1>
 
       {loading && (

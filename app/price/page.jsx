@@ -4,7 +4,7 @@ import After from '../_components/price/After'
 
 export default function Page() {
   return (
-    <div className="w-full min-h-screen py-12 relative overflow-hidden">
+    <div className="w-full min-h-screen py-12 relative overflow-hidden bg-white">
       {/* SVG BACKGROUND DECORATIONS */}
       <div className="absolute inset-0 -z-10 w-full h-full pointer-events-none">
         {/* دائرة كبيرة شفافة */}

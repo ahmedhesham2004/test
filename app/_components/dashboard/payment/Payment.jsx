@@ -191,7 +191,7 @@ const Payment = () => {
               <select
                 value={selectedDoctorId}
                 onChange={(e) => setSelectedDoctorId(e.target.value)}
-                className="w-full p-4 border-2 border-gray-200 rounded-xl text-right bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-100 transition-all duration-200 outline-none"
+                className="w-full text-black p-4 border-2 border-gray-200 rounded-xl text-right bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-100 transition-all duration-200 outline-none"
               >
                 <option value="">اختر دكتور</option>
                 {doctors.map((doctor) => (
@@ -211,7 +211,7 @@ const Payment = () => {
               <select
                 value={selectedUserId}
                 onChange={(e) => setSelectedUserId(e.target.value)}
-                className="w-full p-4 border-2 border-gray-200 rounded-xl text-right bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-100 transition-all duration-200 outline-none"
+                className="w-full text-black p-4 border-2 border-gray-200 rounded-xl text-right bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-100 transition-all duration-200 outline-none"
               >
                 <option value="">اختر مريض</option>
                 {patients.map((user) => (
@@ -235,7 +235,7 @@ const Payment = () => {
                   setAppointmentDate("");
                   setBookingStatus("");
                 }}
-                className="w-full p-4 border-2 border-gray-200 rounded-xl text-right focus:border-blue-500 focus:ring-4 focus:ring-blue-100 transition-all duration-200 outline-none bg-white"
+                className="w-full text-black p-4 border-2 border-gray-200 rounded-xl text-right focus:border-blue-500 focus:ring-4 focus:ring-blue-100 transition-all duration-200 outline-none bg-white"
               >
                 <option value="">اختر يومًا</option>
                 {uniqueDays.map((day, index) => (
@@ -260,7 +260,7 @@ const Payment = () => {
               <select
                 value={appointmentDate}
                 onChange={(e) => setAppointmentDate(e.target.value)}
-                className={`w-full p-4 border-2 rounded-xl text-right transition-all duration-200 outline-none ${
+                className={`w-full text-black p-4 border-2 rounded-xl text-right transition-all duration-200 outline-none ${
                   !selectedDay
                     ? "border-gray-200 bg-gray-50 text-gray-400 cursor-not-allowed"
                     : "border-gray-200 bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-100"

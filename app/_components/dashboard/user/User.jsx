@@ -274,7 +274,7 @@ const [newUser, setNewUser] = useState({
             <input
               type="text"
               placeholder="البحث في المستخدمين..."
-              className="w-full pl-4 pr-12 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full text-black pl-4 pr-12 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -283,7 +283,7 @@ const [newUser, setNewUser] = useState({
           <div className="relative">
             <Filter className="absolute right-3 top-3 w-5 h-5 text-gray-400" />
             <select
-              className="pl-4 pr-12 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+              className="pl-4 text-black pr-12 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
               value={filterRole}
               onChange={(e) => setFilterRole(e.target.value)}
             >
@@ -467,7 +467,7 @@ const [newUser, setNewUser] = useState({
           <label className="block text-sm font-medium text-gray-700 mb-1">الاسم الأول</label>
           <input
             type="text"
-            className="w-full p-2 border border-gray-300 rounded-lg"
+            className="w-full text-black p-2 border border-gray-300 rounded-lg"
             value={newUser.firstName}
             onChange={(e) => setNewUser({...newUser, firstName: e.target.value})}
           />
@@ -477,7 +477,7 @@ const [newUser, setNewUser] = useState({
           <label className="block text-sm font-medium text-gray-700 mb-1">الاسم الأخير</label>
           <input
             type="text"
-            className="w-full p-2 border border-gray-300 rounded-lg"
+            className="w-full text-black p-2 border border-gray-300 rounded-lg"
             value={newUser.lastName}
             onChange={(e) => setNewUser({...newUser, lastName: e.target.value})}
           />
@@ -487,7 +487,7 @@ const [newUser, setNewUser] = useState({
           <label className="block text-sm font-medium text-gray-700 mb-1">البريد الإلكتروني</label>
           <input
             type="email"
-            className="w-full p-2 border border-gray-300 rounded-lg"
+            className="w-full text-black p-2 border border-gray-300 rounded-lg"
             value={newUser.email}
             onChange={(e) => setNewUser({...newUser, email: e.target.value})}
           />
@@ -497,7 +497,7 @@ const [newUser, setNewUser] = useState({
           <label className="block text-sm font-medium text-gray-700 mb-1">رقم الهاتف</label>
           <input
             type="tel"
-            className="w-full p-2 border border-gray-300 rounded-lg"
+            className="w-full text-black p-2 border border-gray-300 rounded-lg"
             value={newUser.phoneNumber}
             onChange={(e) => setNewUser({...newUser, phoneNumber: e.target.value})}
           />
@@ -507,7 +507,7 @@ const [newUser, setNewUser] = useState({
           <label className="block text-sm font-medium text-gray-700 mb-1">كلمة المرور</label>
           <input
             type="text"
-            className="w-full p-2 border border-gray-300 rounded-lg"
+            className="w-full text-black p-2 border border-gray-300 rounded-lg"
             value={newUser.password}
             onChange={(e) => setNewUser({...newUser, password: e.target.value})}
           />
@@ -516,7 +516,7 @@ const [newUser, setNewUser] = useState({
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">النوع</label>
           <select
-            className="w-full p-2 border border-gray-300 rounded-lg"
+            className="w-full text-black p-2 border border-gray-300 rounded-lg"
             value={newUser.sex}
             onChange={(e) => setNewUser({...newUser, sex: e.target.value})}
           >

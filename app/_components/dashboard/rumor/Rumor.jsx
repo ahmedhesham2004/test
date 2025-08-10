@@ -102,7 +102,7 @@ const router = useRouter();
   };
 
   return (
-    <div className="p-4 max-w-7xl ml-10 mr-auto">
+    <div className="p-4 max-w-7xl ml-10 mr-auto bg-white">
       <div className="bg-white rounded-xl shadow-sm p-6">
         <h2 className="text-2xl font-semibold text-gray-800 mb-6 border-b pb-3">
           إضافة سجل طبي جديد
@@ -127,7 +127,7 @@ const router = useRouter();
               name="userId"
               value={formData.userId}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              className="w-full text-black border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-100"
               required
             >
               <option value="">اختر المريض</option>
@@ -149,12 +149,12 @@ const router = useRouter();
               name="type"
               value={formData.type}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              className="w-full text-black border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-100"
               required
             >
-              <option value="">اختر النوع</option>
-              <option value="أشعة">أشعة</option>
-              <option value="تحليل">تحليل</option>
+              <option className="text-black" value="">اختر النوع</option>
+              <option className="text-black" value="أشعة">أشعة</option>
+              <option className="text-black" value="تحليل">تحليل</option>
             </select>
             {errors.Type && errors.Type.map((err, index) => (
               <p key={index} className="text-red-500 text-sm mt-1">{err}</p>
@@ -172,7 +172,7 @@ const router = useRouter();
               value={formData.title}
               onChange={handleChange}
               placeholder="مثال: فحص دوري، أشعة صدر..."
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              className="w-full text-black border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-100"
               required
             />
             {errors.Title && errors.Title.map((err, index) => (
@@ -194,7 +194,7 @@ const router = useRouter();
               onChange={handleChange}
               rows={4}
               placeholder="اكتب وصفاً تفصيلياً للسجل الطبي..."
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              className="w-full text-black border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-100"
               required
             />
             {errors.Description && errors.Description.map((err, index) => (
@@ -213,7 +213,7 @@ const router = useRouter();
                 name="imageFile"
                 accept="image/*"
                 onChange={handleChange}
-                className="w-full"
+                className="w-full text-black"
                 required
               />
             </div>

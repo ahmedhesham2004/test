@@ -4,7 +4,7 @@ import HeroSection from '../_components/work/HeroSection'
 import Section from '../_components/work/Section'
 export default function page() {
   return (
-    <div>
+    <div className='bg-white'>
         <HeroSection/>
         <TypeWork/>
         <Section/>
