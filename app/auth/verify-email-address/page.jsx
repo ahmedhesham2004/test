@@ -1,7 +1,10 @@
+import { Suspense } from "react"
 import VerifyEmail from "../../_components/Authentications/Ass"
 
 export default function page() {
   return (
-    <VerifyEmail/>
+    <Suspense>
+      <VerifyEmail/>
+    </Suspense>
   )
 }

@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import NewPassword from '../_components/Authentications/NewPassword'
 
 export default function () {
   return (
-    <NewPassword/>
+    <Suspense>
+      <NewPassword/>
+    </Suspense>
   )
 }
